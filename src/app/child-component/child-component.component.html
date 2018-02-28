@@ -1,0 +1,17 @@
+<header #headerElement style="height: 40px;
+                              cursor: pointer;
+                              text-align: center;"
+        [ngStyle]="{'background-color': backgroundHeaderColor}"
+        (click)="toogle()">header</header>
+<body #bodyElement
+      *ngIf="bodyIsVisible"
+      style="background: antiquewhite;
+             word-wrap: break-word;
+             font-family: 'Courier New';
+             /*overflow: auto;*/
+             /*height: 1200px;*/
+      ">
+      {{pdfData}}
+</body>
+<footer #footerElement style="background: aliceblue;"
+        [ngStyle]="{'background-color': backgroundHeaderColor}">footer</footer>

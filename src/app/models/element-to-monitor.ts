@@ -5,4 +5,6 @@ export class ElementToMonitor {
   childHeaderElement: ElementRef;
   childBodyElement: ElementRef;
   childFooterElement: ElementRef;
+  headerFixed: boolean;
+  footerFixed: boolean;
 }
